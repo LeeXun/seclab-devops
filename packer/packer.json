@@ -1,0 +1,19 @@
+{
+  "builders": [
+    {
+      "type": "googlecompute",
+      "account_file": "",
+      "project_id": "",
+      "source_image": "ubuntu-1804-bionic-v20200430",
+      "zone": "asia-east1-a",
+      "image_description": "Puppet Agent ({{timestamp}})",
+      "image_name": "puppet-agent-{{timestamp}}",
+      "ssh_username": "ubuntu",
+      "tags": []
+    }
+  ],
+  "provisioners": [{
+    "type": "shell",
+    "script": "./provisioner.sh"
+  }]
+}
