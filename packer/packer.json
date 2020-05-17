@@ -7,7 +7,7 @@
       "source_image": "ubuntu-1804-bionic-v20200430",
       "zone": "asia-east1-a",
       "image_description": "Puppet Agent ({{timestamp}})",
-      "image_name": "puppet-agent-{{timestamp}}",
+      "image_name": "puppet-agent-<build-by who>-{{timestamp}}", # add your id here to let your teamates know
       "ssh_username": "ubuntu",
       "tags": []
     }
