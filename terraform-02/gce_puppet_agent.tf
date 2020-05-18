@@ -3,6 +3,8 @@
 
 # GCE instance
 resource "google_compute_instance" "nginx" {
+   # You might need to change the name,
+  # or this name will conflict with your teamates' resources.
   name         = "nginx"
   machine_type = "???" # Add this
   zone         = "???" # Add this

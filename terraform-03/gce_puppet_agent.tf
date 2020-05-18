@@ -1,5 +1,7 @@
 # The load balancer
 resource "google_compute_forwarding_rule" "nginx" {
+  # You might need to change the name,
+  # or this name will conflict with your teamates' resources.
   name                  = "nginx-forwarding-rule"
   load_balancing_scheme = "???" # Add this
   ip_protocol           = "???" # Add this
